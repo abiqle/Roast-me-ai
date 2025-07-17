@@ -1,0 +1,136 @@
+/* 🔮 Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #09010f, #2c003f, #e100ff20);
+  font-family: monospace;
+  color: #f6aaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 🧠 Main container */
+.roast-container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 0 20px #ff00ff33;
+}
+
+/* ✨ Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+/* 🧾 Inputs */
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+  background: transparent;
+  border: 1px solid #f49aff;
+  color: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  margin-right: 1rem;
+  background: transparent;
+  border: 1px solid #ff80ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #ff00ff33;
+}
+
+/* 🗣️ Roast output */
+.output {
+  margin-top: 2rem;
+  background: #00000033;
+  padding: 1rem;
+  border-left: 4px solid #ff00ff;
+  border-radius: 6px;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fbe6ff;
+}
+
+/* 👣 Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #ffbfff;
+}
+
+/* 📸 Image Preview */
+.preview-wrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.preview-label {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-img {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ff99ff;
+  box-shadow: 0 0 10px #ff00ff33;
+  margin-top: 0.5rem;
+}
+
+/* 📱 Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .roast-container {
+    margin: 1rem;
+    padding: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .preview-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: 1px solid #f49aff;
+  color: #fff;
+  border-radius: 6px;
+}
+
